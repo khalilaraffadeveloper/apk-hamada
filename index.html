@@ -20,53 +20,121 @@
             <p class="app-subtitle">للتوصيل</p>
         </div>
 
-        <div class="card">
-            <div class="card-icon">
-                <i class="bi bi-motorcycle"></i>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('driver')">تطبيق السائق</button>
+            <button class="tab-btn" onclick="switchTab('customer')">تطبيق الزبون</button>
+        </div>
+
+        <div id="driverTab" class="tab-content">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-motorcycle"></i>
+                </div>
+                <h2 class="card-title">TRENDLY — سائق</h2>
+                <p class="card-desc">تطبيق التوصيل للسائقين — استقبل طلبات الزبائن في نواكشوط</p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="bi bi-file-earmark-arrow-down"></i>
+                        <span>الإصدار: 1.1</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-android2"></i>
+                        <span>أندرويد 7.0+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-hdd"></i>
+                        <span>~20 ميجا</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-shield-check"></i>
+                        <span>مجاني وآمن</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-truck"></i>
+                        <span>دراجة / سيارة</span>
+                    </div>
+                </div>
+
+                <a href="Trendly_Driver.apk" class="download-btn">
+                    <i class="bi bi-download"></i>
+                    <span>تحميل تطبيق السائق</span>
+                </a>
+
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-num">1</span>
+                        <p>اضغط زر التحميل أعلاه</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">2</span>
+                        <p>افتح ملف APK بعد التحميل</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">3</span>
+                        <p>افتح "مصادر غير معروفة" إذا طُلب منك</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">4</span>
+                        <p>ثبّت وسجل كسائق!</p>
+                    </div>
+                </div>
             </div>
-            <h2 class="card-title">TRENDLY</h2>
-            <p class="card-desc">تطبيق توصيل سريع وموثوق في نواكشوط</p>
+        </div>
 
-            <div class="info-grid">
-                <div class="info-item">
-                    <i class="bi bi-file-earmark-arrow-down"></i>
-                    <span>الإصدار: 1.0</span>
+        <div id="customerTab" class="tab-content" style="display:none;">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-person"></i>
                 </div>
-                <div class="info-item">
-                    <i class="bi bi-android2"></i>
-                    <span>أندرويد 7.0+</span>
-                </div>
-                <div class="info-item">
-                    <i class="bi bi-hdd"></i>
-                    <span>الحجم: ~15 ميجا</span>
-                </div>
-                <div class="info-item">
-                    <i class="bi bi-shield-check"></i>
-                    <span>مجاني وآمن</span>
-                </div>
-            </div>
+                <h2 class="card-title">TRENDLY — زبون</h2>
+                <p class="card-desc">اطلب التوصيل واستلم مشترياتك بسرعة في نواكشوط</p>
 
-            <a href="Trendly_Driver.apk" class="download-btn" id="downloadBtn">
-                <i class="bi bi-download"></i>
-                <span>تحميل التطبيق</span>
-            </a>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="bi bi-file-earmark-arrow-down"></i>
+                        <span>الإصدار: 1.0</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-android2"></i>
+                        <span>أندرويد 7.0+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-hdd"></i>
+                        <span>~20 ميجا</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-shield-check"></i>
+                        <span>مجاني وآمن</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <span>اختر دراجة أو سيارة</span>
+                    </div>
+                </div>
 
-            <div class="steps">
-                <div class="step">
-                    <span class="step-num">1</span>
-                    <p>اضغط زر التحميل أعلاه</p>
-                </div>
-                <div class="step">
-                    <span class="step-num">2</span>
-                    <p>افتح ملف APK بعد التحميل</p>
-                </div>
-                <div class="step">
-                    <span class="step-num">3</span>
-                    <p>افتح "مصادر غير معروفة" إذا طُلب منك</p>
-                </div>
-                <div class="step">
-                    <span class="step-num">4</span>
-                    <p>ثبّت واستمتع بالتوصيل!</p>
+                <a href="Trendly_Customer.apk" class="download-btn">
+                    <i class="bi bi-download"></i>
+                    <span>تحميل تطبيق الزبون</span>
+                </a>
+
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-num">1</span>
+                        <p>اضغط زر التحميل أعلاه</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">2</span>
+                        <p>افتح ملف APK بعد التحميل</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">3</span>
+                        <p>افتح "مصادر غير معروفة" إذا طُلب منك</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">4</span>
+                        <p>ثبّت واطلب التوصيل!</p>
+                    </div>
                 </div>
             </div>
         </div>

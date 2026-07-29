@@ -1,5 +1,14 @@
+function switchTab(tab) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(function (t) { t.style.display = 'none'; });
+    document.getElementById(tab + 'Tab').style.display = '';
+
+    const btns = document.querySelectorAll('.tab-btn');
+    btns.forEach(function (b) { b.classList.remove('active'); });
+    document.querySelector('[onclick="switchTab(\'' + tab + '\')"]').classList.add('active');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-    const downloadBtn = document.getElementById('downloadBtn');
     const features = document.querySelectorAll('.feature');
     const steps = document.querySelectorAll('.step');
 
@@ -28,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeObserver.observe(el);
     });
 
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', function () {
+    document.querySelectorAll('.download-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
             this.style.transform = 'scale(0.95)';
             var self = this;
             setTimeout(function () {
                 self.style.transform = 'scale(1)';
             }, 150);
         });
-    }
+    });
 });

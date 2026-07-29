@@ -91,8 +91,42 @@ body {
     margin-top: -2px;
 }
 
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin: -10px 16px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: rgba(255,255,255,0.8);
+    border: 2px solid transparent;
+    border-radius: 14px 14px 0 0;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #fff;
+    color: #0B1849;
+    border-color: #D4A843;
+    border-bottom-color: #fff;
+}
+
+.tab-btn:not(.active):hover {
+    background: rgba(255,255,255,0.95);
+    color: #555;
+}
+
 .card {
-    margin: -20px 16px 20px;
+    margin: 0 16px 20px;
     background: #fff;
     border-radius: 20px;
     padding: 28px 20px;
