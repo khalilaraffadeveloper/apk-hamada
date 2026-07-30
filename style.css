@@ -230,6 +230,14 @@ body {
     box-shadow: 0 3px 12px rgba(212, 168, 67, 0.5);
 }
 
+.download-btn.disabled {
+    background: #ccc;
+    box-shadow: none;
+    animation: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .download-btn i {
     font-size: 22px;
 }

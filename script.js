@@ -1,3 +1,13 @@
+function switchTab(tab) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(function (t) { t.style.display = 'none'; });
+    document.getElementById(tab + 'Tab').style.display = '';
+
+    const btns = document.querySelectorAll('.tab-btn');
+    btns.forEach(function (b) { b.classList.remove('active'); });
+    document.querySelector('[onclick="switchTab(\'' + tab + '\')"]').classList.add('active');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const features = document.querySelectorAll('.feature');
     const steps = document.querySelectorAll('.step');
@@ -27,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeObserver.observe(el);
     });
 
-    document.querySelectorAll('.download-btn').forEach(function (btn) {
+    document.querySelectorAll('.download-btn:not(.disabled)').forEach(function (btn) {
         btn.addEventListener('click', function () {
             this.style.transform = 'scale(0.95)';
             var self = this;
