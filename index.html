@@ -23,16 +23,92 @@
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('driver')">تطبيق السائق</button>
             <button class="tab-btn" onclick="switchTab('customer')">تطبيق الزبون</button>
-            <button class="tab-btn" onclick="switchTab('motorcycle')">ARAVA دراجات</button>
+            <button class="tab-btn" onclick="switchTab('motorcycle')">سائق توصيل</button>
         </div>
 
         <div id="driverTab" class="tab-content">
             <div class="card">
                 <div class="card-icon">
-                    <i class="bi bi-motorcycle"></i>
+                    <i class="bi bi-car-front"></i>
                 </div>
                 <h2 class="card-title">ARAVA — سائق</h2>
-                <p class="card-desc">تطبيق التوصيل للسائقين — استقبل طلبات الزبائن في نواكشوط</p>
+                <p class="card-desc">تطبيق التوصيل للسائقين — قيد الإعداد</p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="bi bi-file-earmark-arrow-down"></i>
+                        <span>قريباً</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-android2"></i>
+                        <span>أندرويد 7.0+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-hdd"></i>
+                        <span>---</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-shield-check"></i>
+                        <span>مجاني وآمن</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-phone"></i>
+                        <span>مكالمات صوتية</span>
+                    </div>
+                </div>
+
+                <button class="download-btn disabled" disabled>
+                    <i class="bi bi-download"></i>
+                    <span>قريباً</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="customerTab" class="tab-content" style="display:none;">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-person"></i>
+                </div>
+                <h2 class="card-title">ARAVA — زبون</h2>
+                <p class="card-desc">تطبيق الزبون قيد الإعداد — سيُتاح قريباً</p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="bi bi-file-earmark-arrow-down"></i>
+                        <span>قريباً</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-android2"></i>
+                        <span>أندرويد 7.0+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-hdd"></i>
+                        <span>---</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-shield-check"></i>
+                        <span>مجاني وآمن</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <span>اختر دراجة أو سيارة</span>
+                    </div>
+                </div>
+
+                <button class="download-btn disabled" disabled>
+                    <i class="bi bi-download"></i>
+                    <span>قريباً</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="motorcycleTab" class="tab-content" style="display:none;">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-motorcycle"></i>
+                </div>
+                <h2 class="card-title">ARAVA — سائق توصيل</h2>
+                <p class="card-desc">تطبيق التوصيل بالدراجات للسائقين — استقبل طلبات الزبائن في نواكشوط</p>
 
                 <div class="info-grid">
                     <div class="info-item">
@@ -81,82 +157,6 @@
                         <p>ثبّت وسجل كسائق!</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="customerTab" class="tab-content" style="display:none;">
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-person"></i>
-                </div>
-                <h2 class="card-title">ARAVA — زبون</h2>
-                <p class="card-desc">تطبيق الزبون قيد الإعداد — سيُتاح قريباً</p>
-
-                <div class="info-grid">
-                    <div class="info-item">
-                        <i class="bi bi-file-earmark-arrow-down"></i>
-                        <span>قريباً</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-android2"></i>
-                        <span>أندرويد 7.0+</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-hdd"></i>
-                        <span>---</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-shield-check"></i>
-                        <span>مجاني وآمن</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-arrow-left-right"></i>
-                        <span>اختر دراجة أو سيارة</span>
-                    </div>
-                </div>
-
-                <button class="download-btn disabled" disabled>
-                    <i class="bi bi-download"></i>
-                    <span>قريباً</span>
-                </button>
-            </div>
-        </div>
-
-        <div id="motorcycleTab" class="tab-content" style="display:none;">
-            <div class="card">
-                <div class="card-icon">
-                    <i class="bi bi-motorcycle"></i>
-                </div>
-                <h2 class="card-title">ARAVA دراجات</h2>
-                <p class="card-desc">تطبيق التوصيل بالدراجات — قيد الإعداد</p>
-
-                <div class="info-grid">
-                    <div class="info-item">
-                        <i class="bi bi-file-earmark-arrow-down"></i>
-                        <span>قريباً</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-android2"></i>
-                        <span>أندرويد 7.0+</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-hdd"></i>
-                        <span>---</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-shield-check"></i>
-                        <span>مجاني وآمن</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="bi bi-phone"></i>
-                        <span>مكالمات صوتية</span>
-                    </div>
-                </div>
-
-                <button class="download-btn disabled" disabled>
-                    <i class="bi bi-download"></i>
-                    <span>قريباً</span>
-                </button>
             </div>
         </div>
 
