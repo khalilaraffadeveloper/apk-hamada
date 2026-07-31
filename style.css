@@ -354,6 +354,35 @@ body {
     font-size: 20px;
 }
 
+.register-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #0B1849 0%, #1A2D6D 100%);
+    color: #D4A843;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    border: 2px solid #D4A843;
+    border-radius: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(11, 24, 73, 0.3);
+}
+
+.register-btn:active {
+    transform: scale(0.97);
+}
+
+.register-btn i {
+    font-size: 20px;
+}
+
 footer {
     text-align: center;
     padding: 20px 16px 30px;
